@@ -10,7 +10,7 @@ huggingface_api_key = st.secrets["HUGGINGFACE_ACCESS_TOKEN"]
 
 # Configure Hugging Face model
 llm = HuggingFaceEndpoint(
-    repo_id="meta-llama/Llama-3.2-3B-Instruct",
+    repo_id="mistralai/Mistral-7B-v0.1",
     task="text-generation",
     model_kwargs={"huggingface_api_key": huggingface_api_key}
 )
