@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-core
+dotenv
+PyPDF2
+pandas
+langchain-huggingface
+transformers
+huggingface-hub
+langchain-community
