@@ -6,7 +6,7 @@ from langchain_community.llms import HuggingFaceEndpoint
 from langchain.prompts import PromptTemplate
 
 # Load environment variables
-huggingface_api_key = st.secrets["HUGGINGFACE_ACCESS_TOKEN"]
+huggingface_api_key = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
 # Configure Hugging Face model
 llm = HuggingFaceEndpoint(
