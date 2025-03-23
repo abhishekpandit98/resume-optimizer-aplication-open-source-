@@ -12,7 +12,7 @@ huggingface_api_key = st.secrets["HUGGINGFACE_ACCESS_TOKEN"]
 llm = HuggingFaceEndpoint(
     repo_id="meta-llama/Llama-3.2-3B-Instruct",
     task="text-generation",
-    huggingface_api_key=huggingface_api_key  
+    model_kwargs={"huggingface_api_key": huggingface_api_key}
 )
 
 
