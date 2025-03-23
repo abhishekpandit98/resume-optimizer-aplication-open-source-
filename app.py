@@ -6,12 +6,13 @@ from langchain_community.llms import HuggingFaceEndpoint
 from langchain.prompts import PromptTemplate
 
 # Load environment variables
-load_dotenv()
+huggingface_api_key = st.secrets["HUGGINGFACE_ACCESS_TOKEN"]
 
 # Configure Hugging Face model
 llm = HuggingFaceEndpoint(
     repo_id="meta-llama/Llama-3.2-3B-Instruct",
-    task="text-generation",  
+    task="text-generation",
+    huggingfacehub_api_token=huggingface_api_key  
 )
 
 
